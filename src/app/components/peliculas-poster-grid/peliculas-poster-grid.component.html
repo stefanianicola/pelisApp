@@ -1,7 +1,10 @@
 <div class="row">
  <div class="col-md-4 mb-5" *ngFor="let movie of movies">
     <div class="movie-description">
-        <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="img-fluid poster" alt="">
+        <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" 
+        class="img-fluid poster" 
+        alt=""
+        (click)="MovieClick( movie )">
         <div>
             <h3 class="title">{{movie.title}}</h3>
             <div class="row">

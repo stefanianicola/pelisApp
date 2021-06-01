@@ -38,6 +38,9 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  ngOnDestroy(): void {
+    this.peliculasService.resetCarteleraPage();   
+  }
  
 
 }

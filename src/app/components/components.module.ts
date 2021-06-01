@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import { SliderComponent } from './slider/slider.component';
 import { PeliculasPosterGridComponent } from './peliculas-poster-grid/peliculas-poster-grid.component';
 import { RatingModule } from 'ng-starrating';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 
@@ -21,7 +22,8 @@ import { RatingModule } from 'ng-starrating';
   imports: [
     CommonModule,
     RouterModule,
-    RatingModule
+    RatingModule,
+    PipesModule
   ]
 })
 export class ComponentsModule { }
